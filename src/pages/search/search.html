@@ -1,0 +1,65 @@
+<ion-header class="themedark">
+<div>
+<button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+<div class="nav_header_title floatLeft">
+Search Trip
+</div>
+<div class="clear"></div>
+</div>
+<div class="dc_location_search_box themedark">
+<div class="dc_line_search"></div>
+<input class="dc_loc_white" placeholder="Pickup Location here">
+<input class="dc_start_white" placeholder="Drop Location here">
+<div class="dc_interchange_location"></div>
+</div>
+</ion-header>
+<ion-content padding class="theme_background">
+	<div class="dc_search_tab_div">
+		<div class="dc_search_tab_head">
+			<li [class.active]="post_type=='active'" (click)="change_post_type('active')">One Way</li>
+			<li [class.active]="post_type=='inactive'" (click)="change_post_type('inactive')">Round Trip</li>
+			<div class="clear"></div>
+		</div>
+		<div class="dc_search_tab_content">
+		<div [hidden]="post_type=='inactive'">
+			<div class="dc_route p0">
+				<div class="dc_route_left floatLeft" style="border-right:1px solid #b5b5b5;">
+				<h5>Start time</h5>
+				<p>05:00&nbsp;am</p>
+				</div>
+				<div class="dc_route_left floatRight">
+				<h5>Start time</h5>
+				<p>05:00&nbsp;am</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="dc_start_date">
+					<p>Start Date <strong>15 Feb 2017</strong></p>
+				</div>
+				<div class="dc_weekdays">
+					<p>Days of Operation</p>
+					<hr>
+					<li>Mon</li>
+					<li>Tue</li>
+					<li>Wed</li>
+					<li class="selected">Thu</li>
+					<li>Fri</li>
+					<li>Sat</li>
+					<li>Sun</li>
+					<div class="clear"></div>
+				</div>
+			
+		</div>
+		<div  [hidden]="post_type=='active'">Round Trip</div>
+		<div>
+		</div>
+		</div>
+	</div>
+</ion-content>
+<ion-footer>
+<div class="dc_footer">
+	<button ion-button class="dc_sign_btn" style="margin-top:0px;">Search</button>
+</div>
+<div class="dc_btm_border">
+</div>
+</ion-footer>

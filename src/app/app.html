@@ -1,0 +1,28 @@
+<ion-menu [content]="content">
+  <ion-content class="themedark">
+  <div class="dc_sidemenu_wrapper">
+	<div class="dc_sidemenu_top">
+		<div class="dc_sidemenu_profile">
+		</div>
+		<h5>ANN REBA ALEXANDER</h5>
+		<p>ann@gmail.com</p>
+		<hr>
+	</div>
+	<div class="dc_sidemenu_list">
+		<ul>
+			<li menuClose (click)="home()">Subscribe Ride</li>
+			<li>Propose Ride</li>
+			<li>Instant Ride Booking</li>
+			<li>Rental Service</li>
+			<li menuClose (click)="subscription()">My Subscription</li>
+			<li>My Proposal</li>
+			<li>My Interests</li>
+			<li>My Rides</li>
+		</ul>
+	</div>
+  </div>
+    
+  </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

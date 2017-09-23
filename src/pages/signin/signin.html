@@ -1,0 +1,33 @@
+
+<ion-content padding class="theme_background">
+	<div class="dc_body_wrapper heightFull">
+		<div class="dc_sign_wrapper heightFull">
+		<div class="dc_logo">
+			<img src="assets/img/dc_logo.png">
+		</div>
+		<div class="dc_sign_form">
+			<div class="dc_row">
+				<input class="dc_sign_input" placeholder="Username">
+			</div>
+			<div class="dc_row">
+				<input class="dc_sign_input" placeholder="Password">
+			</div>
+			<div class="dc_row">
+				<button ion-button class="dc_sign_btn" (click)="home()">Login</button>
+			</div>
+			<div class="dc_row textCenter">
+			<p>Dont have an Account</p>
+			<p (click)="signup()"><strong>Signup here</strong></p>
+			</div>
+		</div>
+		</div>
+	</div>
+</ion-content>
+<ion-footer>
+<div class="dc_footer">
+<li class="dc_fb"><img src="assets/img/dc_facebook.png"></li>
+<li class="dc_google"><img src="assets/img/dc_google.png"></li>
+</div>
+<div class="dc_btm_border">
+</div>
+</ion-footer>

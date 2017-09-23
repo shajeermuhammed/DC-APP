@@ -1,0 +1,77 @@
+<ion-header class="themedark">
+<div>
+<button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+<div class="nav_header_title floatLeft">
+My Subscription
+</div>
+<button ion-button class="nav_btn nav_count floatRight"><div class="dc_count">1</div></button>
+<button ion-button class="nav_btn nav_cab floatRight"></button>
+<div class="clear"></div>
+</div>
+</ion-header>
+
+
+<ion-content class="theme_background">
+		<div class="dc_map_inner">
+	  <ul>
+		<li (click)="tripdetail()">
+			<div class="dc_home_list_top">
+			<div class="dc_dot_line"></div>
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_top_right">
+			<div class="dc_seat p0 textLeft pl10">
+						<span><img src="assets/img/dc_timing.png"><strong>05:00 am</strong></span><br>
+						<span class="relative" style="top:3px;">Days</span>
+					</div>
+			</div>
+			<div class="clear"></div>
+		</li>
+		<li>
+			<div class="dc_subscription_detail">
+				<h5>Subscription Details</h5>
+				<li>Start<br>
+				<strong class="relative">10/02/2017</strong></li>
+				<li class="dc_border_sp">End
+				<strong class="relative">15/02/2017</strong></li>
+				<li>Subs Details<br>
+				<strong class="red relative">Monthly</strong></li>
+				<div class="clear"></div>
+				<li>Payment Type<br>
+				<strong class="relative">Cash</strong></li>
+				<li class="dc_border_sp">Status<br>
+				<strong class="relative">Paid</strong></li>
+				<li>Sub ID<br>
+				<strong class="relative">WET2RT56</strong></li>
+				<div class="clear"></div>
+				<hr>
+				<div class="dc_fare">
+				Total Fare <strong>$375</strong>
+				</div>
+			</div>
+		</li>
+		<div class="dc_footer">
+			<button ion-button class="dc_sign_btn" style="margin-top:0px;" (click)="payment()">Payment History</button>
+		</div>
+	</ul>
+	
+	</div>
+
+</ion-content>
+<ion-footer>
+<div class="dc_footer_tab themedark">
+	<li><img src="assets/img/dc_paynow.png"><p>Pay now</p></li>
+	<li><img src="assets/img/dc_remove.png"><p>Drop</p></li>
+	<li><img src="assets/img/dc_renew.png"><p>Renew</p></li>
+	<li><img src="assets/img/dc_more.png"><p>More</p></li>
+	<div class="clear"></div>
+</div>
+<div class="dc_btm_border">
+</div>
+</ion-footer>
+

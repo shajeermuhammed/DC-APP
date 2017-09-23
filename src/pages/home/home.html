@@ -1,0 +1,274 @@
+<ion-header class="themedark">
+<div>
+<button menuToggle ion-button class="nav_btn nav_menu floatLeft"></button>
+<div class="nav_header_title floatLeft">
+Home
+</div>
+<button ion-button class="nav_btn nav_count floatRight"><div class="dc_count">9</div></button>
+<button ion-button class="nav_btn nav_cab floatRight"></button>
+<button ion-button class="nav_btn nav_search floatRight" (click)="search()"></button>
+<div class="clear"></div>
+</div>
+<div class="dc_home_tab">
+<ul>
+	<li [ngClass]="{'active' : slidertab == 0}" (click)="goToSlide(0)"><span class="dot" [ngClass]="{'active' : slidertab == 0}">.</span><span>Active</span></li>
+	<li [ngClass]="{'active' : slidertab == 1}" (click)="goToSlide(1)"><span class="dot" [ngClass]="{'active' : slidertab == 1}">.</span><span>Proposed</span></li>
+	<li [ngClass]="{'active' : slidertab == 2}" (click)="goToSlide(2)"><span class="dot" [ngClass]="{'active' : slidertab == 2}">.</span><span>Upcoming</span></li>
+	<div class="clear"></div>
+</ul>
+</div>
+</ion-header>
+<ion-content class="theme_background">
+<ion-slides pager="false" #mySlider (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+	  <div class="dc_home_list">
+	  <ul>
+		<li (click)="tripdetail()">
+			<div class="dc_home_list_top">
+			<div class="dc_dot_line"></div>
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="dc_home_list_top">
+				<div class="dc_depart textLeft">
+					Abeerden
+				</div>
+				<div class="dc_destination textLeft">
+					Glassglow
+				</div>
+			</div>
+			<div class="dc_home_list_bottom">
+				<div class="dc_list_bottom_left">
+				<span>Start Time<strong>05:00&nbsp;&nbsp;am</strong></span>
+				</div>
+				<div class="dc_list_bottom_right">
+					<div class="dc_seat">
+						<span><img src="assets/img/dc_seat.png"><strong>4/14</strong></span>
+					</div>
+					<div class="dc_cabadd"><img src="assets/img/dc_addcab.png"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+	  </ul>
+	  </div>
+      </ion-slide>
+      <ion-slide>
+  2
+      </ion-slide>
+      <ion-slide>
+   3
+      </ion-slide>
+    </ion-slides>
+</ion-content>
+<ion-footer>
+<div class="dc_footer">
+	<button ion-button class="dc_sign_btn">Subscribe</button>
+</div>
+<div class="dc_btm_border">
+</div>
+</ion-footer>
